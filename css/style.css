@@ -1,13 +1,45 @@
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
     background: linear-gradient(to right, #2600ff, #8c00ff);
     animation: moveGradient 5s linear infinite;
-    color: white;
-    text-align: center;
-    padding: 300px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+   #calculator {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    }
+
+    input {
+        background-color: #fff;
+        width: 90%;
+        padding: 10px;
+        margin: 8px 0;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        outline: none;
+        font-size: 17px;
+    }
+
+    button {
+        width: 70px;
+        height: 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
 
 @keyframes moveGradient {
     0% {
